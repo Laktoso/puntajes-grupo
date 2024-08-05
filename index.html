@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntajes del Grupo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Puntajes del Grupo</h1>
+        <div id="participantsInput">
+            <input type="text" id="groupName" placeholder="Nombre del grupo">
+            <input type="text" id="participantName" placeholder="Nombre del participante">
+            <input type="number" id="participantScore" placeholder="Puntaje">
+            <button id="addParticipant">Agregar Participante</button>
+        </div>
+        <button id="generateChart">Generar Gráfico</button>
+        <canvas id="scoresChart"></canvas>
+        <h2 id="winner" style="margin-top: 20px;">Ganador: Ninguno</h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
